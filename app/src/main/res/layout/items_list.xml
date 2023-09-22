@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="100dp"
+    android:layout_margin="8dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/action_item_name_title"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textColor="#222222"
+            android:textSize="16sp"
+            android:text="@string/action_name_title"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/action_item_name"
+            android:layout_toEndOf="@+id/action_item_name_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#222222"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/action_item_name_title" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="22dp"
+            android:text="@string/action_loop_button_text"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/action_item_total_time_title"
+            android:layout_alignParentBottom="true"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textColor="#222222"
+            android:textSize="16sp"
+            android:text="@string/action_delay_title"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/action_item_total_time"
+            android:layout_toEndOf="@+id/action_item_total_time_title"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#222222"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/action_item_total_time_title" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
